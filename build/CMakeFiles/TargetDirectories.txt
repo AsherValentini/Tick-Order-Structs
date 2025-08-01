@@ -1,0 +1,4 @@
+/home/asher/HFT-Onramp/Tick-Order-Structs/build/CMakeFiles/order.dir
+/home/asher/HFT-Onramp/Tick-Order-Structs/build/CMakeFiles/tick.dir
+/home/asher/HFT-Onramp/Tick-Order-Structs/build/CMakeFiles/edit_cache.dir
+/home/asher/HFT-Onramp/Tick-Order-Structs/build/CMakeFiles/rebuild_cache.dir

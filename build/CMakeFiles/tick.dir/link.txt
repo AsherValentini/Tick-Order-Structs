@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/tick.dir/src/tick_driver.cpp.o -o tick 
