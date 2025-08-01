@@ -6,10 +6,10 @@ Real-time trading systems move millions of “ticks” and “orders” per seco
 
 ## 2. Functional Spec
 
-Struct	Mandatory Fields	Strong-Type Suggestions	Notes
-Tick	InstrumentId id, int64_t ts_ns, Price px, Qty qty	Define wrapper types:
-using InstrumentId = uint32_t wrapped in a struct InstrumentId { uint32_t v; };	Timestamp nanoseconds since epoch (monotonic clock OK in sim).
-Order	OrderId oid, InstrumentId id, Side side, Price px, Qty qty, TimeInForce tif, OrderType type	enum class Side { Buy, Sell }; etc.	Keep size ≤ 64 bytes; plan for cache-line friendliness.
+| Struct  | Mandatory Fields                                                                                          | Strong-Type Suggestions                                                                                        | Notes                                                              |
+| ------- | --------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| `Tick`  | `InstrumentId id`, `int64_t ts_ns`, `Price px`, `Qty qty`                                                 | *Define wrapper types:*<br>`using InstrumentId = uint32_t` wrapped in a `struct InstrumentId { uint32_t v; };` | Timestamp **nanoseconds since epoch** (monotonic clock OK in sim). |
+| `Order` | `OrderId oid`, `InstrumentId id`, `Side side`, `Price px`, `Qty qty`, `TimeInForce tif`, `OrderType type` | `enum class Side { Buy, Sell };` etc.                                                                          | Keep size ≤ 64 bytes; plan for cache-line friendliness.            |
 
 Extras (optional but recommended)
 
