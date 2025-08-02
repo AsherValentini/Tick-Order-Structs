@@ -3,8 +3,8 @@
 
 CMakeFiles/tick.dir/src/tick_driver.cpp.o
  /home/asher/HFT-Onramp/Tick-Order-Structs/src/tick_driver.cpp
- /home/asher/HFT-Onramp/Tick-Order-Structs/include/strong_types.hpp
- /home/asher/HFT-Onramp/Tick-Order-Structs/include/tick.hpp
+ /home/asher/HFT-Onramp/Tick-Order-Structs/include/core/strong_types.hpp
+ /home/asher/HFT-Onramp/Tick-Order-Structs/include/core/tick.hpp
  /usr/include/alloca.h
  /usr/include/asm-generic/errno-base.h
  /usr/include/asm-generic/errno.h

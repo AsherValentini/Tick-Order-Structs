@@ -1,8 +1,7 @@
 CMakeFiles/tick.dir/src/tick_driver.cpp.o: \
  /home/asher/HFT-Onramp/Tick-Order-Structs/src/tick_driver.cpp \
- /usr/include/stdc-predef.h \
- /home/asher/HFT-Onramp/Tick-Order-Structs/include/tick.hpp \
- /usr/include/c++/13/iostream /usr/include/c++/13/bits/requires_hosted.h \
+ /usr/include/stdc-predef.h /usr/include/c++/13/iostream \
+ /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -150,8 +149,10 @@ CMakeFiles/tick.dir/src/tick_driver.cpp.o: \
  /usr/include/c++/13/bits/locale_facets.tcc \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
- /usr/include/c++/13/bits/istream.tcc /usr/include/c++/13/cstdint \
+ /usr/include/c++/13/bits/istream.tcc \
+ /home/asher/HFT-Onramp/Tick-Order-Structs/include/core/tick.hpp \
+ /usr/include/c++/13/cstdint \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
- /home/asher/HFT-Onramp/Tick-Order-Structs/include/strong_types.hpp
+ /home/asher/HFT-Onramp/Tick-Order-Structs/include/core/strong_types.hpp
