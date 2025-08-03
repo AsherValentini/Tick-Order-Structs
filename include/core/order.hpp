@@ -5,13 +5,20 @@
 
 enum class Side : uint8_t {
 	Buy,
-	Sell
+	Sell,
+	Count // <- not a real side, just locks the enums length
 };
+static_assert(static_cast<std::uint8_t>(Side::Count) == 2,
+	"Side enum count changed-update code that depends on it");
 
 enum class OrderType : uint8_t {
 	Limit,
-	Market
+	Market,
+	Count
 };
+
+static_assert(static_cast<std::uint8_t>(OrderType::Count) ==2,
+	"OrderType count changed-update code that depends on it");
 
 struct Order {
 	Price px; // 8 B
