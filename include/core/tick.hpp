@@ -14,11 +14,10 @@ struct Tick {
 static_assert(sizeof(Tick) <= 32, "Tick too large");
 static_assert(std::is_trivially_copyable_v<Tick>);
 
-inline std::ostream& operator<<(std::ostream& os, const Tick& tick) {
-	os << "[Tick]";
-	os << " instrument: " << tick.id;
-	os << " time: " << tick.ts_ns;
-	os << " price: " << tick.px;
-	os << " quantity: " << tick.qty;
-	return os;
+inline std::ostream& operator<<(std::ostream& os, const Tick& t) {
+    return os << R"({"id":)"  << t.id
+              << R"(,"ts":)" << t.ts_ns
+              << R"(,"px":)" << t.px
+              << R"(,"qty":)"<< t.qty
+              << '}';
 }
